@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: spark-cap
+spec:
+  hard:
+    cpu: '400' # 400 CPU corresponds to 4VCPU per executor
+    memory: 800Gi # 800 GiB corresponds to 8GiB per executor 
