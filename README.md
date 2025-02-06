@@ -1,7 +1,7 @@
 # Carbon- and Precedence-Aware Scheduling for Data Processing
 
 As large-scale data processing workloads continue to grow, their carbon footprint raises concerns. Prior research on carbon-aware schedulers has focused on shifting computation to align with availability of low-carbon energy, but these approaches assume that each task can be executed independently. 
-In contrast, data processing jobs have precedence constraints (i.e., outputs of one task are inputs for another) that complicate decisions, since delaying an upstream ``bottleneck'' task to a low-carbon period will also block downstream tasks, impacting the entire job's completion time. 
+In contrast, data processing jobs have precedence constraints (i.e., outputs of one task are inputs for another) that complicate decisions, since delaying an upstream "bottleneck" task to a low-carbon period will also block downstream tasks, impacting the entire job's completion time. 
 In this paper, we show that carbon-aware scheduling for data processing benefits from knowledge of both time-varying carbon and precedence constraints. 
 Our main contribution is `PCAPS`, a carbon-aware scheduler that interfaces with modern ML scheduling policies to explicitly consider the precedence-driven importance of  each task in addition to carbon.  To illustrate the gains due to fine-grained task information, we also study `CAP`, a wrapper for any carbon-agnostic scheduler that adapts the key provisioning ideas of `PCAPS`.
 Our schedulers enable a configurable priority between carbon reduction and job completion time, and we give analytical results characterizing the trade-off between the two.
