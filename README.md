@@ -1,4 +1,4 @@
-# Carbon-Aware Scheduling for Data Processing
+# Carbon- and Precedence-Aware Scheduling for Data Processing
 
 As large-scale data processing workloads continue to grow, their carbon footprint raises concerns. Prior research on carbon-aware schedulers has focused on shifting computation to align with availability of low-carbon energy, but these approaches assume that each task can be executed independently. 
 In contrast, data processing jobs have precedence constraints (i.e., outputs of one task are inputs for another) that complicate decisions, since delaying an upstream ``bottleneck'' task to a low-carbon period will also block downstream tasks, impacting the entire job's completion time. 
@@ -13,10 +13,10 @@ The code in this repository is split between our simulator code (in `simulator/`
 
 ## Reproducing Simulator Results
 
-To evaluate `PCAPS` and `CAP` against all implemented baselines in a simulated cluster with 100 executors and 50 random TPC-H jobs under the sample carbon trace, run the following command at the root of this repository:
+To evaluate `PCAPS` and `CAP` against all implemented baselines in a simulated cluster with 100 executors and one trial of 50 random TPC-H jobs under the sample carbon trace, run the following command at the root of this repository:
 
 ```
-python3 simulator/test.py --exec_cap 50 --exec_cap 100 --num_init_dags 1 --num_stream_dags 50 --canvs_visualization 0 --test_schemes spark_fifo dynamic_partition decima green_hadoop cap_fifo cap_partition cap_decima pcaps --saved_model ./models/stream_200_job_diff_reward_reset_5e-7_5e-8/model_ep_20000
+python3 simulator/test.py --num_exp 1 --exec_cap 50 --exec_cap 100 --num_init_dags 1 --num_stream_dags 50 --canvs_visualization 0 --test_schemes spark_fifo dynamic_partition decima green_hadoop cap_fifo cap_partition cap_decima pcaps
 ```
 
 Note that this simulator assumes a Python environment with the following packages:

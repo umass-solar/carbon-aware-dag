@@ -1,4 +1,4 @@
-# Carbon-Aware Scheduling for Data Processing
+# Carbon- and Precedence-Aware Scheduling for Data Processing
 ## Prototype Code 
 
 Each folder in this directory corresponds to one component of our Spark+Kubernetes implementation.  Throughout this code, we assume these folders are placed in a user's home folder (`~/`) on the control plane node of a Kubernetes cluster.

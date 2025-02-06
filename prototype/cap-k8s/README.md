@@ -1,4 +1,4 @@
-# Carbon-Aware Scheduling for Data Processing
+# Carbon- and Precedence-Aware Scheduling for Data Processing
 ## Prototype Code 
 ### CAP (Carbon-Aware Provisioning) module for Kubernetes and Spark
 

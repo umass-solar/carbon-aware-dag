@@ -1,4 +1,4 @@
-# Carbon-Aware Scheduling for Data Processing
+# Carbon- and Precedence-Aware Scheduling for Data Processing
 ## Prototype Code 
 ### Modified Apache Spark codebase
 
