@@ -15,7 +15,7 @@ The code in this repository is split between our simulator code (in `simulator/`
 
 To evaluate `PCAPS` and `CAP` against all implemented baselines in a simulated cluster with 100 executors and one trial of 50 random TPC-H jobs under the sample carbon trace, run the following command at the root of this repository:
 
-```
+```bash
 python3 simulator/test.py --num_exp 1 --exec_cap 50 --exec_cap 100 --num_init_dags 1 --num_stream_dags 50 --canvs_visualization 0 --test_schemes spark_fifo dynamic_partition decima green_hadoop cap_fifo cap_partition cap_decima pcaps
 ```
 
