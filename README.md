@@ -35,7 +35,7 @@ Note that this simulator assumes a Python environment with the following package
 
 Our simulator code and Decima baseline comparison algorithm are both adapted from the following paper.  Find their original simulator code at [https://github.com/hongzimao/decima-sim](https://github.com/hongzimao/decima-sim).
 
-> Hongzi Mao, Malte Schwarzkopf, Shaileshh Bojja Venkatakrishnan, Zili Meng, and Mohammad Alizadeh. 2019. Learning scheduling algorithms for data processing clusters. In Proceedings of the ACM Special Interest Group on Data Communication (SIGCOMM '19). Association for Computing Machinery, New York, NY, USA, 270–288. https://doi.org/10.1145/3341302.3342080
+> H. Mao, M. Schwarzkopf, S.B. Venkatakrishnan, Z. Meng, and M. Alizadeh. 2019. Learning scheduling algorithms for data processing clusters. In Proceedings of the ACM Special Interest Group on Data Communication (SIGCOMM '19). Association for Computing Machinery, New York, NY, USA, 270–288. https://doi.org/10.1145/3341302.3342080
 
 **Carbon intensity data:**
 
@@ -59,7 +59,7 @@ To use these benchmarks with Spark's built in `spark-submit` utility, we leverag
 **Apache Spark source code:**
 
 In our prototype implementation, we make modifications to the Apache Spark source code to enable communication with our scheduling service.  The original paper is:
-> Matei Zaharia, Reynold S. Xin, Patrick Wendell, Tathagata Das, Michael Armbrust, Ankur Dave, Xiangrui Meng, Josh Rosen, Shivaram Venkataraman, Michael J. Franklin, Ali Ghodsi, Joseph Gonzalez, Scott Shenker, and Ion Stoica. 2016. Apache Spark: a unified engine for big data processing. Commun. ACM 59, 11 (November 2016), 56–65. https://doi.org/10.1145/2934664
+> M. Zaharia, R.S. Xin, P. Wendell, T. Das, M. Armbrust, A. Dave, X. Meng, J. Rosen, S. Venkataraman, M.J. Franklin, A. Ghodsi, J. Gonzalez, S. Shenker, and I. Stoica. 2016. Apache Spark: a unified engine for big data processing. Commun. ACM 59, 11 (November 2016), 56–65. https://doi.org/10.1145/2934664
 
 The current source code can be found at:
 > [`apache/spark`: Apache Spark - A unified analytics engine for large-scale data processing](https://github.com/apache/spark)
