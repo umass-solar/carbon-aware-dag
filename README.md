@@ -39,7 +39,7 @@ Our simulator code and Decima baseline comparison algorithm are both adapted fro
 
 **Carbon intensity data:**
 
-This repository includes a sample of historicalcarbon intensity data from [Electricity Maps](https://www.electricitymaps.com/), for the `DE` grid region.
+This repository includes a sample of historical carbon intensity data from [Electricity Maps](https://www.electricitymaps.com/), for the `DE` grid region.
 
 > Electricity Maps. retrieved 2024. https://www.electricitymaps.com
 
